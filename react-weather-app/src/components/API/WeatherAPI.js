@@ -11,7 +11,7 @@ class WeatherAPI extends React.Component {
 
     componentDidMount = () => {
         
-        fetch("api.openweathermap.org/data/2.5/weather?q=vancouver&appid=af2e529daf727ec2cbec62e2e2a2484b").then((res) => {
+        fetch("http://api.weatherapi.com/v1/current.json?key=a0c47b6ab43944f8aad03257211106&q=Vancouver&aqi=no").then((res) => {
             if (res.status !== 200) {
                 console.log(`This is a Error ${res.status}`);
             }
