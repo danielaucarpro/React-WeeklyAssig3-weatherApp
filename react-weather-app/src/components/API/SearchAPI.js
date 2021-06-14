@@ -2,16 +2,16 @@ import React from 'react';
 
 const Context = React.createContext(); //INITIALIZING CONTEXT INSTANCE
 
-class WeatherAPI extends React.Component {
+class SearchWeather extends React.Component {
     state = {
         weatherData: [],
-        api: 'af2e529daf727ec2cbec62e2e2a2484b',
+        api: 'a0c47b6ab43944f8aad03257211106',
         city: 'Vancouver'
     }
 
     componentDidMount = async () => {
         try {
-            const weatherRes = await fetch(`api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=${this.state.api}`)
+            const weatherRes = await fetch(`http://api.weatherapi.com/v1/search.json?key=${this.state.api}&q=${this.state.city}`)
             if (!weatherRes.ok) {
                 throw weatherRes.statusText;
             } else {

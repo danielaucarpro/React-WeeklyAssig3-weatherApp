@@ -1,0 +1,63 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+}
+
+.header-h1 {
+  margin-top: 0.3rem;
+}
+
+.header-container {
+  text-align: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  box-shadow: 1px 2px 3px lightgray;
+}
+
+.header-form {
+  display: inline-flex;
+}
+
+.degree-button {
+  font-size: 1rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+}
+.degree-button:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.icon {
+  height: 2.1rem;
+  width: 2.1rem;
+  background-color: #f0f0f0;
+  align-items: center;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.search-icon {
+  padding-top: 0.5rem;
+}
+
+.search-input {
+  font-size: 1rem;
+  height: 2.25rem;
+  margin-right: 1rem;
+  border: 1px solid gray;
+}
+
+.search-button {
+  font-size: 1rem;
+  height: 2.2rem;
+  background-color: #f0f0f0;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+}
+.search-button:hover {
+  cursor: pointer;
+  background-color: white;
+}
